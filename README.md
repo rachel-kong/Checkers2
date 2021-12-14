@@ -13,6 +13,12 @@ We created a 2 player game in which each user inputs a starting point to indicat
 
 If the adjacent square contains an opponent's piece, and the square immediately beyond it is empty or unoccupied, the piece may be captured by jumping over it. These rules are accounted for in our code. 
 
+Basic Rules
+-Always move diaganolly forward towards opponent's side of gameboard
+-Move your checker piece on space diagonally to an open adjacent square or jump one or more checkers diagonally to an adjacent square of the checker piece jumped over. When you jump over the opponent's piece, you capture it
+-If all the adjacent to your checker are occupied, your check is blocked and can't move
+-When your checker reaches the first row on your opponent's side of board
+
 # Technical Description
 
 # Screenshots of Working Program
