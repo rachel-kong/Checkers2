@@ -1,6 +1,7 @@
 #include<stdio.h>
- 
-#define ROWS 8
+
+/* define variables */
+#define ROWS 8 /* checkers is played on an 8x8 board */
 #define COLS 8
  
 #define EMPTY 1
@@ -14,7 +15,7 @@
 #define ISBLACK(c) (c == BLACK || c == BLACKKING))
 #define ISEMPTY(c) (c == 1)
  
- 
+/* draws and prints the board */ 
 void printDisplay(int d[][COLS]);
 void swapIJKL(int d[ROWS][COLS], int i, int j, int k, int l);
 char value2symbol(int i);
@@ -40,7 +41,8 @@ void printDisplayFancy(int d[][COLS])
     
     printf("    a   b   c   d   e   f   g   h\n");
 }
- 
+
+/* swaps the pieces */ 
 void swapIJKL(int d[ROWS][COLS], int i, int j, int k, int l)
 {
     int temp;
@@ -61,7 +63,7 @@ char value2symbol(int i)
         case 0:
             return ' ';
         case 1:
-            return 'E';  
+            return 'E';  /* E stands for empty space, $ stands for red pieces, and @ stands for black pieces */
         case 2:
             return '$';
         case 3:
@@ -69,7 +71,8 @@ char value2symbol(int i)
     }
     return ('?');
 }
- 
+
+/* lists the moves that the players made */
 int Playersturn(int d[][COLS], int player,int i,int j,int k,int l)
 {
     int jmp_r;
@@ -99,7 +102,7 @@ int Playersturn(int d[][COLS], int player,int i,int j,int k,int l)
         printf("l is out of bounds\n");
         return -1;
     }
-        
+    /* code is for if player moves the wrong piece */    
     if(player == RED){
         if(d[i][j] != RED){
             printf("move your own piece!\n");
@@ -111,13 +114,13 @@ int Playersturn(int d[][COLS], int player,int i,int j,int k,int l)
             return -1;
         }
     }
-    
+    /* code for when the player moves to an occupied location */
     if(d[k][l] != EMPTY){
         printf("You must move to a empty location");
         return -1;
     }
     
-    
+    /* code for when player moves in the wrong direction */
     if(player == RED){
         if(i >= k){
             printf("RED player must move down\n");
@@ -151,7 +154,7 @@ int Playersturn(int d[][COLS], int player,int i,int j,int k,int l)
             
             if(player==RED && d[jmp_r][jmp_c]!=BLACK)
             {
-                printf("Enemeny is not Black at %d%d",jmp_r, jmp_c);
+                printf("Enemy is not Black at %d%d",jmp_r, jmp_c);
                 return -1;
             }
             if(player==BLACK && d[jmp_r][jmp_c] != RED){
@@ -180,7 +183,7 @@ int main()
     {0,2,0,2,0,2,0,2},
     {2,0,2,0,2,0,2,0}, 
     {0,2,0,2,0,2,0,2}, 
-    {1,0,1,0,1,0,1,0}, 
+    {1,0,1,0,1,0,1,0},    /* the 0's are spaces that can't be occupied. the red pieces will occupy where the 2's are, the 1's are where the empty spaces are, and the 3's are where the black pieces are */
     {0,1,0,1,0,1,0,1}, 
     {3,0,3,0,3,0,3,0},
     {0,3,0,3,0,3,0,3},
