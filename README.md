@@ -15,3 +15,6 @@ If the adjacent square contains an opponent's piece, and the square immediately 
 
 # Technical Description
 
+# Screenshots of Working Program
+
+# Link to YouTube video recording of presentation and code walk through
