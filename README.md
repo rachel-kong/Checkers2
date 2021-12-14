@@ -6,3 +6,5 @@ Checkers is played by two people who oppose each other across a board of 64 ligh
 
 The RED pieces are $. The black pieces are @
 E denotes empty spots.
+Only diagonal moves are allowed by jumping over opponent pieces to capture pieces. One player has the dark pieces; the other has the light pieces. Players alternate turns, and a player may not move an opponent's piece. A move consists of moving a piece diagonally to an adjacent unoccupied square that is denoted by E. 
+If the adjacent square contains an opponent's piece, and the square immediately beyond it is empty or unoccupied, the piece may be captured by jumping over it. These rules are accounted for in our code. 
