@@ -28,7 +28,7 @@ int Playersturn - int data type for user input of column followed by either the 
 Bugs:
 -Taking multiple pieces in one single move is not implemented
 -Code will not allow capital letters to substitute lowercase ones, so if the player wanst to moove from 3d to 5f but insetad types 5F, the game will call this move illegal even though its technically the same.
--User must enter string input as the row followed by the column (r,c) and cannot enter it (c,r) or else the output is a repeating loop of "Red's turn: to: RED move from -1,-97 to -1,-97 move your own piece!"
+-User must enter string input as the row followed by the column (r,c) and cannot enter it (c,r) or else the output is a repeating loop of "Red's turn: to: RED move from -1,-97 to -1,-97 move your own piece! Illegal move, try again"
 -Game does not indicate when there is a winner. Even if the red piece captures all the black pieces, there will be no indication of a win rather than that all the black pieces are gone from the board. 
 
 Sample Game: 
