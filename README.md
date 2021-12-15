@@ -80,7 +80,8 @@ Sample Game:
 
 Result: All blacks are captured, but game does not technically end. Code is "continuous"
 
-Possible Scenarios:
+Possible Scenarios
+
 Illegal Input #1: 6a, 6b 
 Output: Move your own piece! 
 Illegal move, try again!
