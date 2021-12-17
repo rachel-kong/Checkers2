@@ -106,3 +106,4 @@ Explanation: This is a correct move as the player moves diagonally forward to an
 [![Screen-Shot-2021-12-14-at-1-56-08-PM.png](https://i.postimg.cc/gjfyf4kN/Screen-Shot-2021-12-14-at-1-56-08-PM.png)](https://postimg.cc/vxt6nrnV)
 
 # Link to YouTube video recording of presentation and code walk through
+https://www.youtube.com/watch?v=THVTntUk3Tc
